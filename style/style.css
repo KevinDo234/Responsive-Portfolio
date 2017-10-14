@@ -52,15 +52,18 @@ h3{
 }
 
 #contact{
-	float: left;
+	float:;
 	border: 1px #dddddd;
 	width: 200px;
+  height: 100px;
 	padding: 30px;
 	margin: 20px;
 	background-color: white;
 	margin-top: 75px;
 	text-align: center;
 	border-style: solid;
+  position: sticky;
+  left: 0;
 }
 
 p{
@@ -164,6 +167,25 @@ input[type=submit]:hover {
     padding: 20px;
 }
 
+@media screen and (max-width:980px) {
+  body {
+    background-color: #333;
+  }
+
+#contact {
+    width: 300px;
+    margin: 50px;
+  }
+
+.boxed {
+    width: 350px;
+}
+
+.topnav {
+    position: static;
+    max-width: 980px;
+}
+
 @media screen and (max-width: 768px) {
   body {
     background-color: #333;
@@ -175,5 +197,29 @@ input[type=submit]:hover {
   }
 
 .boxed {
-    width: 600px;
+    width: 350px;
+}
+
+.topnav {
+    position: static;
+    max-width: 768px;
+}
+
+@media screen and (max-width: 640px) {
+  body {
+    background-color: #333;
+  }
+
+#contact {
+    width: 300px;
+    margin: 50px;
+  }
+
+.boxed {
+    width: 350px;
+}
+
+.topnav {
+    position: static;
+    max-width: 640px;
 }
